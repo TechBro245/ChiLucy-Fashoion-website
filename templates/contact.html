@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Contact - ChiLucy Fashion{% endblock %}
+
+{% block content %}
+<section class="py-5" style="background: var(--nav);">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-5 mb-4">
+        <h6 style="color: var(--sec); letter-spacing: 4px;">GET IN TOUCH</h6>
+        <h2 class="fw-bold" style="color: var(--pri);">Contact ChiLucy</h2>
+        <p class="text-muted mt-3">Let's create your dream outfit. Visit us or chat us up.</p>
+        
+        <div class="mt-4">
+          <p><strong style="color: var(--pri);">Phone / WhatsApp: +234 816 268 5642</strong><br></p>
+          <p><strong style="color: var(--pri);">Instagram: @chinwe_lucy</strong><br> </p>
+          <p><strong style="color: var(--pri);">Shop Address: 62 Agbani Rd. by Igbarim bustop Enugu, Nigeria.</strong><br></p>
+          <p><strong style="color: var(--pri);">Email: chinwelucy08@gmail.com</strong><br></p>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <form class="card border-0 shadow p-4" style="border-radius: 16px;">
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input type="text" class="form-control" placeholder="Your WhatsApp number">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="What do you want to sew?"></textarea>
+          </div>
+          <button class="btn w-100" style="background: var(--pri); color: white;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

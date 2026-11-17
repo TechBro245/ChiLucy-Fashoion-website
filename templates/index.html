@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Home - ChiLucy Fashion{% endblock %}
+
+{% block content %}
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="height: 90vh; background: linear-gradient(rgba(114,62,49,0.5), rgba(114,62,49,0.5)), url('https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?q=80&w=1470') center/cover;">
+      <div class="carousel-caption h-100 d-flex flex-column justify-content-center">
+        <h1 class="display-3 fw-bold" style="color: var(--nav);">Elegance Tailored For You</h1>
+        <p class="lead">Bespoke designs for the modern woman</p>
+        <div><a href="/gallery" class="btn btn-lg px-5 mt-3" style="background: var(--sup); color: var(--pri); font-weight: 600;">View Collection</a></div>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 90vh; background: linear-gradient(rgba(114,62,49,0.5), rgba(114,62,49,0.5)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1470') center/cover;">
+      <div class="carousel-caption h-100 d-flex flex-column justify-content-center">
+        <h1 class="display-3 fw-bold">Craftsmanship & Class</h1>
+        <p class="lead">Where tradition meets contemporary fashion</p>
+        <div><a href="/services" class="btn btn-lg px-5 mt-3" style="background: var(--nav); color: var(--pri);">Our Services</a></div>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 90vh; background: linear-gradient(rgba(114,62,49,0.5), rgba(114,62,49,0.5)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1374') center/cover;">
+      <div class="carousel-caption h-100 d-flex flex-column justify-content-center">
+        <h1 class="display-3 fw-bold">ChiLucy Fashion</h1>
+        <p class="lead">Made in Enugu, Worn Everywhere</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="py-5" style="background: var(--nav);">
+  <div class="container py-4 text-center">
+    <h6 style="color: var(--sec); letter-spacing: 4px;">WELCOME TO</h6>
+    <h2 class="fw-bold display-6" style="color: var(--pri);">ChiLucy Fashion House</h2>
+    <p class="mx-auto mt-3" style="max-width: 650px; color: #6c757d;">We create timeless pieces that celebrate femininity, confidence and culture. From bridal to casual chic, every stitch tells a story.</p>
+  </div>
+</section>
+
+
+{% endblock %}
